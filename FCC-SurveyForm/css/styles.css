@@ -1,0 +1,14 @@
+body{
+    background-image: url(/Images/survey-form-background.jpeg);
+    color:white;
+}
+
+
+
+/* form */
+.user-info input{
+    display: block;
+}
+form select{
+    display: block;
+}

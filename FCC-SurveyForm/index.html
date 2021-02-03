@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
+    
+    <main>
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform.</p>
+        </header>
+        <form id="survey-form" action="">
+            <div class="user-info">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+    
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email">
+    
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" min="15" max="100" placeholder="Age">
+            </div>
+            
+
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="job" id="dropdown">
+                <option value="value1" disabled selected>Select current role</option>
+                <option value="value1">Student</option>
+                <option value="value1">Full time job</option>
+                <option value="value1">Full time learner</option>
+                <option value="value1">Prefer not to say</option>
+                <option value="value1">Other</option>
+            </select>
+
+            <label for="recommend">Would you recommend freeCodeCamp to a friend?</label><br>
+            <input type="radio" name="Definitely" value="Definitely">Definitely<br>
+            <input type="radio" name="Maybe" value="Maybe">Maybe<br>
+            <input type="radio" name="Not sure" value="Not sure">Not sure<br>
+
+            <label>What would you like to see improved? <span>(Check all that apply)</span></label><br>
+            <input class="skills" type="checkbox" name="skill1" value="Front-end Projects">Front-end Projects<br>
+            <input class="skills" type="checkbox" name="skill2" value="Back-end Projects">Back-end Projects<br>
+            <input class="skills" type="checkbox" name="skill3" value="Data Visualization">Data Visualization<br>
+            <input class="skills" type="checkbox" name="skill4" value="Challenges">Challenges<br>
+            <input class="skills" type="checkbox" name="skill5" value="Open Source Community">Open Source Community<br>
+            <input class="skills" type="checkbox" name="skill6" value="Gitter help rooms">Gitter help rooms<br>
+            <input class="skills" type="checkbox" name="skill7" value="Videos">Videos<br>
+            
+            <label>Any comments or suggestions?</label>
+            <textarea rows="10" cols="50" placeholder="Enter your comments here..."></textarea>
+
+            <input type="button" id="submit" value="Submit">
+
+        </form>
+    </main>
+
+    
     
 </body>
 </html>
