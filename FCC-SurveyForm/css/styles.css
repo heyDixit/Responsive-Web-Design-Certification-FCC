@@ -1,13 +1,25 @@
 body{
-    background-image: url(/Images/survey-form-background.jpeg);
+    background: url(/Images/survey-form-background.jpeg), rgba(10, 4, 92, 0.5);
     color:white;
+    background-blend-mode: overlay;
+    
 }
 
+main header{
+    text-align: center;
+}
+
+main form{
+    width: 50%;
+    margin: auto;
+}
 
 
 /* form */
 .user-info input{
     display: block;
+    border-radius: 4%;
+    border: white;
 }
 form select{
     display: block;
