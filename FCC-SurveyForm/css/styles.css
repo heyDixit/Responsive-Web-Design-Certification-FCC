@@ -2,20 +2,24 @@ body{
     background: url(/Images/survey-form-background.jpeg), rgba(10, 4, 92, 0.5);
     color:white;
     background-blend-mode: overlay;
-    
+    background-attachment: fixed;
+    opacity: 0.6;
 }
 
 main header{
     text-align: center;
 }
 
-main form{
-    width: 50%;
-    margin: auto;
-}
+
 
 
 /* form */
+main form{
+    width: 30%;
+    margin: auto;
+    background-color: rgb(94, 45, 94);
+    opacity: 1;
+}
 .user-info input{
     display: block;
     border-radius: 4%;
