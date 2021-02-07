@@ -18,11 +18,11 @@
                 <div class="user-info">
                     <div class="sub-style">
                         <label class="label-style" for="name" id="name-label">Name</label>
-                        <input type="text" id="name" placeholder="Enter your name">
+                        <input type="text" id="name" placeholder="Enter your name" required>
                     </div>
                     <div class="sub-style">
                         <label class="label-style" for="email" id="email-label">Email</label>
-                        <input type="email" id="email" placeholder="Enter your Email"> 
+                        <input type="email" id="email" placeholder="Enter your Email" required> 
                     </div>
                     <div class="sub-style">
                         <label class="label-style" for="number" id="number-label">Age (optional)</label>
@@ -61,12 +61,16 @@
                 </div>
                 
                 <div class="sub-style">
-                    <label class="label-style">Any comments or suggestions?</label>
-                    <textarea rows="10" cols="50" placeholder="Enter your comments here..."></textarea>
+                    <label class="label-style">Any comments or suggestions?</label><br>
+                    <textarea id="text-area" rows="10" cols="50" placeholder="Enter your comments here..."></textarea>
 
+                    
+                    <br>
                     <br>
                 
-                    <input id="form-button" type="button" id="submit" value="Submit">
+                    <button type="submit" id="submit" class="submit-button">Submit
+                    </button>
+                    <br>
                 </div>
                 
             </div>
