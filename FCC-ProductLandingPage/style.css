@@ -9,6 +9,7 @@
 body{
     background-color: #eee;
     font-family: 'Lato', sans-serif;
+    
 }
 
 /* Navbar */
@@ -16,9 +17,13 @@ body{
     width: 98%;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 2rem;
+    margin: auto;
+    padding: 1.5rem;
     min-height: 10vh;
     position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
 }
 #header-img {
     width: 18rem;
@@ -70,4 +75,38 @@ label{
 }
 input{
     margin-top: 1rem;
+}
+
+
+/* Descirption */
+i{
+    color: #cfab18; 
+}
+.icon{
+    display: flex;
+    padding-top: 4rem;
+}
+.description{
+    width:60%;
+    margin: auto;
+    margin-top: 5rem;
+}
+.description-text{
+    padding-left: 5rem;
+}
+.extra{
+    padding-left: 6.6rem;
+}
+
+
+/* Video */
+.video{
+    width:40%;
+    height: 30rem;
+    margin: auto;
+}
+#video{
+    padding-top: 6rem;
+    width: 100%;
+    height: 100%;
 }
