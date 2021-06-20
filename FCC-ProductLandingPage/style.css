@@ -14,7 +14,7 @@ body{
 
 /* Navbar */
 #header {
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -24,6 +24,7 @@ body{
     top:0;
     left: 0;
     right: 0;
+    background-color: #eee;
 }
 #header-img {
     width: 18rem;
@@ -101,12 +102,50 @@ i{
 
 /* Video */
 .video{
-    width:40%;
+    width:600px;
     height: 30rem;
     margin: auto;
 }
 #video{
     padding-top: 6rem;
-    width: 100%;
+    width: 600px;
     height: 100%;
+    max-width: 560px;
+    object-fit: cover;
 }
+
+/* Card */
+.cards{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 4rem;
+}
+.card-list {
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 320px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.card-head{
+    background-color: #ddd;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+.card-cost {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.card-text {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.submit{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+
+/* footer */
