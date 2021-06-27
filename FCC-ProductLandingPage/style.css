@@ -11,32 +11,39 @@ body{
     font-family: 'Lato', sans-serif;
     
 }
+.main{
+    position: relative;
+}
+li{
+    list-style: none;
+}
 
 /* Navbar */
+.up{
+    position: relative;
+    
+}
 #header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
     padding: 1.5rem;
-    min-height: 10vh;
+    height: 10vh;
     position: fixed;
     top:0;
     left: 0;
     right: 0;
     background-color: #eee;
+    align-items: center;
 }
 #header-img {
     width: 18rem;
     height: 2rem;
 }
 #nav-bar{
-    width:30rem;
+    width:40%;
     
 }
-#header ul li{
-    list-style: none;
-}
+
 #header ul li a{
     text-decoration: none;
 }
@@ -50,7 +57,7 @@ body{
 /* Hero */
 .hero {
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 label{
     font-size: 1.5rem;
@@ -85,12 +92,13 @@ i{
 }
 .icon{
     display: flex;
-    padding-top: 4rem;
+    padding: 4rem 2rem 0 2rem;
 }
 .description{
-    width:60%;
+    max-width:60rem;
+    width: 100%;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 .description-text{
     padding-left: 5rem;
@@ -102,13 +110,15 @@ i{
 
 /* Video */
 .video{
-    width:600px;
+    max-width:600px;
+    width: 100%;
     height: 30rem;
     margin: auto;
 }
 #video{
     padding-top: 6rem;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 100%;
     max-width: 560px;
     object-fit: cover;
@@ -116,15 +126,18 @@ i{
 
 /* Card */
 .cards{
-    display: flex;
-    width: 60%;
+    display: flex;   
+    max-width: 900px;
+    width: 100%;
     margin: auto;
     margin-top: 4rem;
+    
 }
 .card-list {
     border: 1px solid black;
     border-radius: 2px;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     text-align: center;
     margin-left: 1rem;
 }
@@ -149,3 +162,58 @@ i{
 
 
 /* footer */
+footer{ 
+    max-width: 960px;
+    width: 100%;
+    height: 5rem;
+    margin:auto;
+    margin-top: 2rem;
+    background-color: #ddd;
+}
+.footer-container .foot {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.foot-items{
+    padding-left: 2rem;
+}
+footer p{
+    text-align: right;
+    color: #444;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+}
+.footer-container{
+    padding: 1rem 2rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .cards {
+        flex-wrap: wrap;
+        width: 400px;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .card-list {
+        margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+      #header {
+          flex-wrap: wrap;
+          height: 20vh;
+      }
+      #nav-bar ul {
+          flex-wrap: wrap;
+          width: 100px;
+          margin: auto;
+      }
+  }
+
+  @media screen and (max-width: 500px){
+      
+  }
